@@ -15,7 +15,7 @@ class DwarfBlacksmith(Dwarf):
             :type favourite_dish: str
         """
         super().__init__(nickname, favourite_dish)
-        self.skill_level = skill_level
+        self._skill_level = skill_level
 
     def get_rating(self) -> int:
         """Get the blacksmith's rating based on skill level.
@@ -23,7 +23,7 @@ class DwarfBlacksmith(Dwarf):
             :return: The skill level of the blacksmith.
             :rtype: int
         """
-        return self.skill_level
+        return self._skill_level
 
     def player_info(self) -> str:
         """Return formatted information about the dwarf blacksmith.
@@ -32,4 +32,4 @@ class DwarfBlacksmith(Dwarf):
             :rtype: str
         """
         return (f"Dwarf blacksmith {self.nickname} with "
-                f"skill of the {self.skill_level} level")
+                f"skill of the {self._skill_level} level")

@@ -15,7 +15,7 @@ class ElfRanger(Elf):
             :type bow_level: int
         """
         super().__init__(nickname, musical_instrument)
-        self.bow_level = bow_level
+        self._bow_level = bow_level
 
     def get_rating(self) -> int:
         """Get the ranger's rating based on bow level.
@@ -23,7 +23,7 @@ class ElfRanger(Elf):
             :return: The rating calculated from bow level multiplied by 3.
             :rtype: int
         """
-        return self.bow_level * 3
+        return self._bow_level * 3
 
     def player_info(self) -> str:
         """Return formatted information about the elf ranger.
@@ -32,4 +32,4 @@ class ElfRanger(Elf):
             :rtype: str
         """
         return (f"Elf ranger {self.nickname}. {self.nickname} has bow of the "
-                f"{self.bow_level} level")
+                f"{self._bow_level} level")

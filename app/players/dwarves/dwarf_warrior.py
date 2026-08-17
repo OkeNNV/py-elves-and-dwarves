@@ -15,7 +15,7 @@ class DwarfWarrior(Dwarf):
             :type favourite_dish: str
         """
         super().__init__(nickname, favourite_dish)
-        self.hummer_level = hummer_level
+        self._hummer_level = hummer_level
 
     def get_rating(self) -> int:
         """Get the warrior's rating based on hammer level.
@@ -23,7 +23,7 @@ class DwarfWarrior(Dwarf):
             :return: The rating calculated from hammer level plus bonus.
             :rtype: int
         """
-        return self.hummer_level + 4
+        return self._hummer_level + 4
 
     def player_info(self) -> str:
         """Return formatted information about the dwarf warrior.
@@ -32,4 +32,4 @@ class DwarfWarrior(Dwarf):
             :rtype: str
         """
         return (f"Dwarf warrior {self.nickname}. {self.nickname} has a "
-                f"hummer of the {self.hummer_level} level")
+                f"hummer of the {self._hummer_level} level")
