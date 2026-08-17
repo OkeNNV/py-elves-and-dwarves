@@ -7,7 +7,7 @@ class ElfRanger(Elf):
                  bow_level: int) -> None:
         """Initialize an ElfRanger instance.
 
-            :param nickname: The unique nickname of the elf ranger.
+            :param nickname: The unique nickname of the player.
             :type nickname: str
             :param musical_instrument: The instrument the elf plays.
             :type musical_instrument: str

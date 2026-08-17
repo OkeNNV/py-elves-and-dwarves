@@ -9,7 +9,7 @@ class Dwarf(Player, ABC):
     def __init__(self, nickname: str, favourite_dish: str) -> None:
         """Initialize a Dwarf instance.
 
-            :param nickname: The unique nickname of the dwarf.
+            :param nickname: The unique nickname of the player.
             :type nickname: str
             :param favourite_dish: The dwarf's favourite dish.
             :type favourite_dish: str

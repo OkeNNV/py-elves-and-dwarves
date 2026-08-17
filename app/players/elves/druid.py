@@ -7,7 +7,7 @@ class Druid(Elf):
                  favourite_spell: str) -> None:
         """Initialize a Druid instance.
 
-            :param nickname: The unique nickname of the druid.
+            :param nickname: The unique nickname of the player.
             :type nickname: str
             :param musical_instrument: The instrument the druid plays.
             :type musical_instrument: str
